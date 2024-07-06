@@ -14,10 +14,10 @@ export function Header() {
 						<Navigation />
 					</div>
 					<ClerkLoaded>
-						<UserButton afterSignOutUrl='/' />	
+						<UserButton afterSignOutUrl="/" />
 					</ClerkLoaded>
 					<ClerkLoading>
-						<Loader2 className='size-8 animate-spin text-slate-400' />
+						<Loader2 className="size-8 animate-spin text-slate-400" />
 					</ClerkLoading>
 				</div>
 				<WelcomeMsg />
