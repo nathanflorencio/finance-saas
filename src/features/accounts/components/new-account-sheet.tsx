@@ -20,14 +20,14 @@ type FormValues = z.input<typeof formSchema>
 export function NewAccountSheet() {
 	const { isOpen, onClose } = useNewAccount()
 
-  const mutation = useCreateAccount()
+	const mutation = useCreateAccount()
 
 	function onSubmit(values: FormValues) {
 		mutation.mutate(values, {
-      onSuccess: () => {
-        onClose()
-      }
-    })
+			onSuccess: () => {
+				onClose()
+			},
+		})
 	}
 
 	return (

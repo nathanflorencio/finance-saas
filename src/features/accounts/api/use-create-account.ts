@@ -16,13 +16,13 @@ export function useCreateAccount() {
 			return await response.json()
 		},
 		onSuccess: () => {
-      toast.success("Account created")
+			toast.success('Account created')
 			queryClient.invalidateQueries({ queryKey: ['accounts'] })
 		},
 		onError: () => {
-      toast.error("Failed to create account")
-    },
+			toast.error('Failed to create account')
+		},
 	})
 
-  return mutation
+	return mutation
 }
