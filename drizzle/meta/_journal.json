@@ -15,6 +15,13 @@
 			"when": 1720235771466,
 			"tag": "0001_public_maelstrom",
 			"breakpoints": true
+		},
+		{
+			"idx": 2,
+			"version": "7",
+			"when": 1720311370042,
+			"tag": "0002_spotty_black_cat",
+			"breakpoints": true
 		}
 	]
 }
