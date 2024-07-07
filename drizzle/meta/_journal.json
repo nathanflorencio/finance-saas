@@ -22,6 +22,13 @@
 			"when": 1720311370042,
 			"tag": "0002_spotty_black_cat",
 			"breakpoints": true
+		},
+		{
+			"idx": 3,
+			"version": "7",
+			"when": 1720324330940,
+			"tag": "0003_chunky_eddie_brock",
+			"breakpoints": true
 		}
 	]
 }
