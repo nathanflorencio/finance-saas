@@ -22,12 +22,12 @@ export function useBulkDeleteTransactions() {
 			return await response.json()
 		},
 		onSuccess: () => {
-			toast.success('Transactions deleted')
+			toast.success('Transactions created')
 			queryClient.invalidateQueries({ queryKey: ['transactions'] })
 			// TODO: Also invalidate summary
 		},
 		onError: () => {
-			toast.error('Failed to delete transactions')
+			toast.error('Failed to create transactions')
 		},
 	})
 
