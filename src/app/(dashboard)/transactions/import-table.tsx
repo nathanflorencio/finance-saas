@@ -1,3 +1,4 @@
+import { TableHeadSelect } from '@/app/(dashboard)/transactions/table-head-select'
 import {
 	Table,
 	TableBody,
@@ -26,7 +27,15 @@ export function ImportTable({
 				<TableHeader className="bg-muted">
 					<TableRow>
 						{headers.map((_item, index) => {
-							return <TableHead key={index}>{index}</TableHead>
+							return (
+								<TableHead key={index}>
+									<TableHeadSelect
+										columnIndex={index}
+										selectedColumns={selectedColumns}
+										onChange={onTableHeadSelectChange}
+									/>
+								</TableHead>
+							)
 						})}
 					</TableRow>
 				</TableHeader>
